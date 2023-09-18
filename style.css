@@ -87,5 +87,10 @@ p{
     padding: 10px;
 }
 
+.textarea::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
 
 
