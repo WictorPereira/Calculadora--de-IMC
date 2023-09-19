@@ -1,3 +1,4 @@
+//variaveis
 const inputHeight = document.querySelector('#height')
 const inputWeight = document.querySelector('#weight')
 const btnCalculate = document.querySelector('#btn-CalculateId')
@@ -21,8 +22,18 @@ function calculateIMC(valueHeight,valueWeight) {
           }
 
         var imc = calculateIMC(valueHeight, valueWeight)
-        var newPlaceHolder =  `Seu IMC: `+ imc.toFixed(2)
-        textArea.placeholder = newPlaceHolder ;
+
+        if (imc < 18 ) {
+            var newPlaceHolder =  `Seu IMC: `+ imc.toFixed(2) + '. Voce esta abaixo do seu peso'
+            textArea.placeholder = newPlaceHolder ;
+        }else if (imc > 18 && imc <= 25) {
+            var newPlaceHolder =  `Seu IMC: `+ imc.toFixed(2) + '. Seu Peso esta normal'
+            textArea.placeholder = newPlaceHolder ;
+        }else{
+            var newPlaceHolder =  `Seu IMC: `+ imc.toFixed(2) + '. Voce esta acima do seu peso'
+            textArea.placeholder = newPlaceHolder ;
+        }
+        
 
     })
 

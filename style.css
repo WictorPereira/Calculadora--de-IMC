@@ -92,5 +92,12 @@ p{
     color: black;
 }
 
+/*tirar barra de rolagem do input */
+.inputs::-webkit-inner-spin-button,
+.inputs#height::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 
 
