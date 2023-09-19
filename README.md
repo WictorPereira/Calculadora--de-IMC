@@ -1,6 +1,3 @@
-# Calculadora-de-IMC
-calculadora que diz se alguém está ou não com o peso ideal.
-
 # Calculadora de IMC
 
 Uma calculadora de Índice de Massa Corporal (IMC). Esta calculadora permite que você calcule seu IMC com base em sua altura e peso e informa se você está abaixo, dentro ou acima do peso recomendado.
